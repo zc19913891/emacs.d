@@ -38,7 +38,7 @@
     (define-key map (kbd "C-c o") 'prelude-open-with)
     (define-key map (kbd "C-c g") 'prelude-google)
     (define-key map (kbd "C-c G") 'prelude-github)
-    (define-key map (kbd "C-c y") 'prelude-youtube)
+    (define-key map (kbd "C-c Y") 'prelude-youtube)
     (define-key map (kbd "C-c U") 'prelude-duckduckgo)
     ;; mimic popular IDEs binding, note that it doesn't work in a terminal session
     (define-key map [(shift return)] 'prelude-smart-open-line)

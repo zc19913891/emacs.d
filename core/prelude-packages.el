@@ -42,35 +42,102 @@
 (package-initialize)
 
 (defvar prelude-packages
-  '(ace-window
-    avy
+  '(ace-jump-mode
+    ace-link
+    ace-pinyin
+    ace-window
+    ack
+    anaconda-mode
     anzu
+    async
+    auto-complete
+    avy
     browse-kill-ring
+    chinese-word-at-point
+    coffee-mode
+    company
     dash
-    discover-my-major
     diff-hl
     diminish
+    discover-my-major
+    dot-mode
     easy-kill
+    elisp-slime-nav
     epl
+    evil
+    evil-anzu
+    evil-easymotion
+    evil-leader
+    evil-nerd-commenter
+    evil-surround
+    exec-path-from-shell
     expand-region
+    f
     flycheck
+    gh
     gist
+    git-commit-mode
+    git-rebase-mode
     git-timemachine
     gitconfig-mode
     gitignore-mode
     god-mode
+    goto-chg
     grizzl
     guru-mode
-    ov
-    projectile
+    helm
+    ht
+    htmlize
+    ido-completing-read+
+    ido-ubiquitous
+    js2-mode
+    json-mode
+    json-reformat
+    json-rpc
+    json-snatcher
+    less-css-mode
+    let-alist
+    logito
     magit
+    makey
+    markdown-mode
+    metaweblog
     move-text
+    multiple-cursors
+    mustache
+    names
     operate-on-number
+    org
+    org-beautify-theme
+    org-bullets
+    org-page
+    org2blog
+    ov
+    pcache
+    php-mode
+    pkg-info
+    popup
+    projectile
+    rainbow-delimiters
+    rainbow-mode
+    request
+    s
+    simple-httpd
+    skewer-mode
     smartparens
     smartrep
+    smarty-mode
+    stylus-mode
+    sws-mode
+    tramp-hdfs
+    tramp-term
     undo-tree
+    vkill
     volatile-highlights
-    zenburn-theme
+    web-mode
+    xml-rpc
+    yasnippet
+    youdao-dictionary
     zop-to-char)
   "A list of packages to ensure are installed at launch.")
 
