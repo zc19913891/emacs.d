@@ -30,6 +30,10 @@
 (require 'evil)
 (evil-mode 1)
 
+(global-linum-mode 1)
+
+(setq whitespace-line-column 160)
+
 (yas-global-mode 1)
 
 (global-auto-complete-mode 1)
@@ -48,30 +52,21 @@
 ;; menu设置为12 lines
 (setq ac-menu-height 12)
 
-;;添加ac补全源
-(set-default 'ac-sources
-             '(ac-source-semantic ;;ac使用semantic的分析结果
-               ac-source-dictionary
-               ac-source-yasnippet
-               ac-source-abbrev
-               ac-source-words-in-buffer
-               ac-source-words-in-all-buffer
-               ac-source-imenu
-               ac-source-files-in-current-dir
-               ac-source-filename))
+  (setq indent-tabs-mode nil)
+  (setq tab-width 4)
 
-;;yasnippet补全源的界面显示设置，这里颜色是红色的，用来与ac本身的补全相区分
-(defface ac-yasnippet-candidate-face
-  '((t (:background "sandybrown" :foreground "black")))
-  "Face for yasnippet candidate.")
+  (global-set-key (kbd "S-TAB") 'indent-for-tab-command)
 
-(defface ac-yasnippet-selection-face
-  '((t (:background "coral3" :foreground "white")))
-  "Face for the yasnippet selected candidate.")
+  (global-set-key (kbd "M-p") 'ace-window)
+  (setq aw-dispatch-always t)
 
-(defvar ac-source-yasnippet
-  '((candidates . ac-yasnippet-candidate)
-    (action . yas/expand)
-    (candidate-face . ac-yasnippet-candidate-face)
-    (selection-face . ac-yasnippet-selection-face))
-  "Source for Yasnippet.")
+  ;; (define-key global-map (kbd "C-c p-h") 'helm-projectile)
+  (define-key global-map (kbd "C-c g") 'helm-projectile-ag)
+  ;; (global-unset-key (kbd "C-c C-p"))
+  ;; (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+
+(global-set-key (kbd "C-c M-s") 'helm-swoop)
+(global-set-key (kbd "C-c M-w") 'helm-multi-swoop-all)
+
+(setq helm-split-window-default-side 'right)
+(setq helm-swoop-split-direction 'split-window-horizontally)

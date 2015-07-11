@@ -36,7 +36,6 @@
 (defvar prelude-mode-map
   (let ((map (make-sparse-keymap)))
     (define-key map (kbd "C-c o") 'prelude-open-with)
-    (define-key map (kbd "C-c g") 'prelude-google)
     (define-key map (kbd "C-c G") 'prelude-github)
     (define-key map (kbd "C-c Y") 'prelude-youtube)
     (define-key map (kbd "C-c U") 'prelude-duckduckgo)

@@ -1,6 +1,3 @@
-(setq-default indent-tabs-mode nil)
-(setq-default c-basic-offset 4)
-(setq-default tab-width 4)
 ;; Enable Cache
 (setq url-automatic-caching t)
 
