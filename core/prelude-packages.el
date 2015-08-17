@@ -47,6 +47,7 @@
     ace-pinyin
     ace-window
     ack
+    ag
     anaconda-mode
     anzu
     async
@@ -86,6 +87,9 @@
     grizzl
     guru-mode
     helm
+    helm-ag
+    helm-projectile
+    helm-swoop
     ht
     htmlize
     ido-completing-read+

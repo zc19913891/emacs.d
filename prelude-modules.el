@@ -68,5 +68,12 @@
 (global-set-key (kbd "C-c M-s") 'helm-swoop)
 (global-set-key (kbd "C-c M-w") 'helm-multi-swoop-all)
 
+(setq helm-gtags-mode 1)
+(global-set-key (kbd "C-c C-]") 'helm-gtags-find-tag)
+(global-set-key (kbd "C-c C-t") 'helm-gtags-pop-stack)
+
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+
 (setq helm-split-window-default-side 'right)
 (setq helm-swoop-split-direction 'split-window-horizontally)
