@@ -51,6 +51,8 @@
     anaconda-mode
     anzu
     async
+    atom-dark-theme
+    atom-one-dark-theme
     auto-complete
     avy
     browse-kill-ring
@@ -77,8 +79,6 @@
     flycheck
     gh
     gist
-    git-commit-mode
-    git-rebase-mode
     git-timemachine
     gitconfig-mode
     gitignore-mode

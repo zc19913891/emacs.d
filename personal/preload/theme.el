@@ -1,1 +1,1 @@
-(setq prelude-theme 'tsdh-dark)
+(setq prelude-theme 'atom-dark)
